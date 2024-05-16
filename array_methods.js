@@ -8,17 +8,15 @@ let cart = [
   { item: "Apples", price: 0.66, quantity: 6 },
 ];
 
-const itemNames = cart.map((cartItem) => {
-  return cartItem.item;
-});
+const itemNames = cart.map((cartItem) => cartItem.item);
 // sorted
 itemNames.sort().forEach((cartItem) => {
   console.log("items in the cart=>>>", cartItem);
 });
 // reduce
-const totalItems = cart.reduce((acc, item) => {
-  acc += item.quantity * item.price;
-  return acc;
-}, 0);
+const totalItems = cart.reduce(
+  (acc, item) => (acc += item.quantity * item.price),
+  0
+);
 
 console.log("your total===>", totalItems);

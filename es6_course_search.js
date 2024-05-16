@@ -48,17 +48,13 @@ console.log(
 );
 
 // What is the title of the PROJ500 course?
-const Proj500 = courses.find((course) =>
-  course.CourseId === "PROJ500" ? true : false
-);
+const Proj500 = courses.find((course) => course.CourseId === "PROJ500");
 
 console.log("What is the title of the PROJ500 course?===>>", Proj500.Title);
 
 // What are the titles of the courses that cost $50 or less?
 
-const cheapCourse = courses.filter((course) =>
-  course.Fee <= 50 ? true : false
-);
+const cheapCourse = courses.filter((course) => course.Fee <= 50);
 
 console.log(
   " What are the titles of the courses that cost $50 or less?==>>>",
@@ -67,8 +63,8 @@ console.log(
 
 // What classes meet in "Classroom 1"?
 
-const classRoomMeet1 = courses.filter((course) =>
-  course.Location === "Classroom 1" ? true : false
+const classRoomMeet1 = courses.filter(
+  (course) => course.Location === "Classroom 1"
 );
 
 console.log(
