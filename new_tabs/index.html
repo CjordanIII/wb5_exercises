@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index.html</title>
+  </head>
+  <body>
+    <nav>
+      <a href="./images.html" alt="Home" target="_blank">Images</a>
+      <a href="./index.html" alt="Index" target="_top">Index.html</a>
+      <button id="btn1">btn1</button>
+      <button id="btn2">btn2</button>
+      <button id="btn3">btn3</button>
+    </nav>
+  </body>
+  <script>
+    window.onload = () => {
+      const btn1 = document.getElementById("btn1");
+      const btn2 = document.getElementById("btn2");
+      const btn3 = document.getElementById("btn3");
+      btn1.addEventListener("click", () => {
+        window.open("./images.html", "_blank");
+      });
+      btn2.addEventListener("click", () => {
+        window.open("https://www.google.com/", "_blank");
+      });
+      btn3.addEventListener("click", () => {
+        window.open("https://www.w3schools.com/js/", "_blank");
+      });
+    };
+  </script>
+</html>
